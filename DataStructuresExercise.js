@@ -31,7 +31,7 @@ const starWarsVillains = sithLords.concat(imperialOfficers)
 console.log(starWarsVillains)
 
 // Question 2D
-console.log(starWarsVillains.splice(0, 2))
+// console.log(starWarsVillains.splice(0, 2))
 
 // Question 3A
 const droids = {astromech: "R2-D2", protocol: "C-3PO", assassin: "IG-88"}
@@ -46,3 +46,29 @@ console.log(droids.protocol)
 droids["assassin"] = "IG-11"
 
 // Question 4A
+console.log(starWarsVillains[0].slice(6, 7))
+
+// Question 5
+console.log(sithLords.slice(-2, -1));
+
+// Question 6A 
+const starWarsMovies = [
+    {
+        episodeOne: "The Phantom Menace",
+        episodeTwo: "Attack of the Clones",
+        episodeThree: "Revenge of the Sith"
+    },
+    {
+        episodeFour: "A New Hope",
+        episodeFive: "The Empire Strikes Back",
+        episodeSix: "Return of the Jedi"
+    },
+    {
+        episodeSeven: "The Force Awakens",
+        episodeEight: "The Last Jedi",
+        episodeNine: "The Rise of Skywalker"
+    }
+]
+
+// Question 6B
+starWarsMovies.splice(1, 0, "Solo", "Rogue One");
